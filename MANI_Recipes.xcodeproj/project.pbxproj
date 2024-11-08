@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FD24867E2CDD8BE300EFEA18 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FD24867D2CDD8BE300EFEA18 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FD81EE542CDD20CB00114FFF /* MANI_Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MANI_Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD24867E2CDD8BE300EFEA18 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = MANI_Recipes;
 			packageProductDependencies = (
+				FD24867D2CDD8BE300EFEA18 /* Alamofire */,
 			);
 			productName = MANI_Recipes;
 			productReference = FD81EE542CDD20CB00114FFF /* MANI_Recipes.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = FD81EE4B2CDD20CB00114FFF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FD24867C2CDD8BE300EFEA18 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FD81EE552CDD20CB00114FFF /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,26 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FD24867C2CDD8BE300EFEA18 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 6.0.0;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FD24867D2CDD8BE300EFEA18 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FD24867C2CDD8BE300EFEA18 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FD81EE4C2CDD20CB00114FFF /* Project object */;
 }

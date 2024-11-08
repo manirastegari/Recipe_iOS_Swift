@@ -6,12 +6,17 @@
 //
 
 import SwiftUI
+import Alamofire
+import Foundation
 
 @main
 struct MANI_RecipesApp: App {
+    let persistenceController = PersistenceController.shared
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
